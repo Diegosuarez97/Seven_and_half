@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Seven and Half</title>
+    <link rel="stylesheet" type="text/css" href="letters_Style.css">
+    <script src="letters.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="load()">
+    <div class="header">
+        <img class="izq" src="Images/Header_izq.png" alt="Header_Left">
+        <div class="name">
+            <h1 class="name_game">Seven and Half</h1>
+            <h1 class="num_game">7</h1>
+        </div>
+        <img class="drch" src="Images/Header_drch.png" alt="Header_Right">
+    </div>
+
+    <div class="game_start">
+        <h2>Player Information</h2>
+        <span class="label">Name:</span> <br><input type="text" id="name" /><br>
+        <span class="label">Initial Money:</span> <br><input type="number" id="money" /><br>
+        <button id="Play" onclick="startGame()">Play</button><br>
+    </div>
+
+    <div class="game">
+        <div id="box_money"> 
+            <div class="coin"></div>           
+            <h2 class="p_money"></h2>
+        </div>
+        
+        <div class="tables">
+
+            <div id="player_table">
+                <div id="player_cards"></div>
+                <h2 class="p_name"></h2><p id="player_cards_title"> Cards</p>
+                
+            </div>
+            <div id="buttons">
+            <h1 class="vs">VS</h1>
+            <button onclick="assign_card('player')">Draw Card</button>
+            <button onclick="stand()">Stand</button>
+            </div>
+            <div id="dealer_table">
+                <div id="dealer_cards"></div>
+                <h3 id="dealer_title">Dealer Cards</h3>
+            </div>
+
+        </div>
+
+        <div id="start-end">
+            <button  onclick="new_round()">New Round</button>
+            <button onclick="end_game()">End Game</button> 
+        </div>
+    
+</body>
+
+</html>

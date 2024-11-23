@@ -1,0 +1,377 @@
+body{
+   width: auto;
+   font-family:"Barlow Condensed", sans-serif;
+   background-color: rgb(0, 0, 0);
+   height: 600px;
+   margin: 0;
+}
+.header {
+   display:flex; 
+   margin: auto;
+   margin-bottom: -35px;
+   background-color: rgb(222, 225, 226);
+}
+.izq{
+   flex-direction: row;
+   width: 40%;
+   z-index: 1;
+}
+
+.drch{
+   flex-direction: row;
+   width: 40%;
+   z-index: 1;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+h1.num_game {
+   font-size: 15vw;
+   color: rgb(0, 0, 0);
+   text-shadow: 0 0 16px rgb(1, 16, 21);
+   margin: 0;
+   position: absolute;
+   top: 40%; 
+   transform: translateY(-50%);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   z-index: 1;
+ }
+
+ h1.name_game {
+   font-size: 3vw;
+   color: rgb(0, 0, 0);
+   text-shadow: 0 0 8px rgb(247, 246, 249);;
+   text-align: center;
+   text-transform: uppercase;
+   margin: 0;
+   font-family: "Saira Stencil One", sans-serif;;
+   position: relative;
+   border:  black;
+   z-index: 2;
+ }
+ 
+
+ .game_start h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    margin-top: 45px;
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 200;
+    
+ }
+
+.game_start{
+   margin-top: 18%;
+   width: 100%;
+   background-color: black;
+   height: 1280px;
+   padding: 15px;
+   margin:0;
+   color: white;
+   display: block;
+   align-self: center;
+   text-align: center;
+}
+
+
+.game_start .label{
+   align-self: center;
+   width: 60%;
+   display: inline-block;
+   text-align: center;
+   margin: 12px;
+}
+
+.game_start input {
+   width: 20%; 
+   display: inline-block;
+   align-content: center;
+   align-self: center;
+   border-radius: 6%;
+   color: black;
+
+}
+
+.game_start button{
+   width: 145PX;
+   padding: 4px;
+   margin-top: 3%;
+   border-color: gray;
+   align-self: center;
+   align-items: center;
+   display: inline-block;
+   font-family: sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.game{
+   margin-bottom: 15%;
+   height: 100%;
+   width: 100%; 
+   background-color: black;
+   margin-top: -4%;
+   display: block;
+   position:absolute;
+   z-index: 0;
+}
+
+
+.p_name{
+   color: rgb(229, 218, 218);
+   text-shadow: 0 0 6px rgb(85, 130, 134);
+   text-align: center;
+   font-family: "Saira Stencil One", sans-serif;
+   margin: 0;   
+   font-size: 2.5vw;
+}
+
+#player_cards_title{
+   text-align: center;
+   text-transform: uppercase;
+   font-family: "Saira Stencil One", sans-serif;
+   font-size: 2vw;
+   color: #ffffff2e;
+   margin: 0px;
+}
+
+
+.tables{
+   display: flex; /* Cambiado a flex */
+   flex-direction: row;
+   justify-content: space-between; /* Distribuye espacio entre los elementos */
+   align-items: center;
+   width: 85%;
+   height: 65%;
+   border: 15px solid rgb(24, 24, 24) ;
+   border-radius: 8px;
+   color: white;
+   margin-top: 0;
+   border-radius: 5%;
+   align-self: center;
+   justify-self: center;
+   box-shadow:  0 0 100px rgb(48, 52, 52); 
+   background-color: #111111;
+   background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+}
+
+
+.hidden{
+   display: none;
+}
+
+/*/---------- */
+/*.player_info{
+   font-size: 20pt;
+   display: flex;   
+   padding-top: 45px;
+   justify-self: center;            
+   justify-content: space-between; 
+   align-items: center;
+   height: 50px;
+   width: 400px;
+   text-align: center;
+   
+} */
+ .p_money{   
+   text-align: center;
+   color: rgb(253, 253, 253);
+   text-shadow: 2px solid #dbdd7e;
+   font-family: "Saira Stencil One", sans-serif;
+
+ }
+
+ #box_money{
+   background-color: #646161;
+   display: flex;
+   justify-self: center;
+   width: 100px;
+   height: 36px;
+   border-radius: 6px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 95px;
+   border-radius: 4px 4px 0px 0px;
+   border: 6px solid rgb(24, 24, 24) ;
+   border-bottom: 0;
+ }
+
+ .coin {
+   transform: translateZ(1px);
+ }
+ 
+ .coin:after {
+   content: '$';
+   display: inline-block;
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 20px;
+   font-size: 18px;
+   font-weight: bold;
+   background: #dbdd7e;
+   color: #595e2f;
+   border: 4px double;
+   box-sizing: border-box;
+   box-shadow: 2px 2px 2px 1px rgba(226, 205, 44, 0.1);
+   animation: coin-flip 30s cubic-bezier(1, 0.1, 1, 0.1) infinite;
+ }
+ 
+ @keyframes coin-flip {
+   0%, 100% {
+     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+   }
+ 
+   100% {
+     transform: rotateY(3600deg);
+   }
+ }
+
+#player_table{
+   width: 40%;
+   height: 89%;
+   background-color: rgb(33, 35, 35);
+   border-right: 15px solid rgb(33, 33, 33);
+   border-radius: 8px;
+   overflow:hidden;   
+   margin-left: 15px;
+   padding-bottom: 22px;
+}
+
+#player_cards{
+   height: 72%;
+   width: 90%;
+   margin: 5px 0px 5px 0px;
+   padding: 2%;
+   background-color: rgb(29, 30, 31);
+   border-radius: 8px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-self: center;
+   box-shadow:  0 0 50px rgb(50, 52, 52), 0 0 80px rgb(64, 77, 78);
+
+}
+
+
+#buttons{
+   display: inline-block;
+   flex-direction: row-reverse;
+   align-items: center;
+   text-align: center;
+   height: 60%;
+}
+#start-end {
+   display: flex;               
+   justify-content: space-between; 
+   align-items: center;        
+   width: 300px;               
+   margin: 0 auto; 
+}
+
+.vs{
+   font-size: 8vw;   
+   margin: 0;
+   text-shadow:  0 0 20px #0ef;
+   
+}
+
+#dealer_table{
+   width: 40%;
+   height: 92%;
+   background-color: rgb(33, 35, 35);
+   border-left: 15px solid rgb(33, 33, 33);
+   border-radius: 5%;
+   overflow:hidden;  
+   margin-right: 15px;
+}
+#dealer_cards{
+   height: 72%;
+   width: 90%;
+   margin: 5px;
+   padding: 2%;
+   background-color: rgb(29, 30, 31);
+   border-radius: 5%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-self: center;
+   box-shadow:  0 0 50px rgb(50, 52, 52), 0 0 80px rgb(64, 77, 78);
+   padding-bottom: 7px;
+}
+
+
+h3{
+   margin: 0;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: "Saira Stencil One", sans-serif;
+   font-size: 2.5vw;
+   color: #060202cd;
+   text-shadow:  0 0 6px rgb(76, 24, 29);
+   margin-bottom: 10px;
+   margin-top: 2%;
+}
+
+
+.card{
+   width: 72px;
+   height: 101px;
+   color:black;
+   font-size: 18pt;
+   font-weight: bold;
+   text-align: center;
+   align-content: center;
+   margin: 2%;
+   background-color: black;
+   border: 1px solid #ffffff80;
+   box-shadow: 0 0 5px rgb(205, 230, 233);
+   border-radius: 10px;
+}
+
+
+button {
+   padding: 10px 20px;
+   text-transform: uppercase;
+   border-radius: 8px;
+   font-size: 17px;
+   font-weight: 500;
+   color: #ffffff80;
+   text-shadow: none;
+   background: transparent;
+   cursor: pointer;
+   box-shadow: transparent;
+   border: 1px solid #ffffff80;
+   transition: 0.5s ease;
+   user-select: none;
+ }
+ 
+ #btn:hover,
+ :focus {
+   color: #ffffff;
+   background: rgb(212, 206, 212);
+   border: 1px solid #0ef;
+   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+   box-shadow: 0 0 5px #0ef, 0 0 20px #0ef, 0 0 50px #0ef, 0 0 100px #0ef;
+   scale: 1.1;
+ }
+ 
+ #btn:active {
+   transform: scale(0.8);
+ }
+ 
+
+
+
+ 
