@@ -44,3 +44,5 @@ Areas for Improvement:
 
 We realized we could simplify the code by adding the color directly as a property in the card vector, avoiding the need to call an additional function for every card generation.
 We could enhance win conditions control and add more dynamic animations for card appearances to improve the user's experience.
+
+Author`s: Alberto Bonilla Abad, Juan Diego Suarez Perez
