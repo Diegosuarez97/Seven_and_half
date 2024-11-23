@@ -58,12 +58,12 @@ function startGame() { // pantalla inicial donde se piden los datos
 
 
 function new_round(){
-	let userInput = prompt("Por favor ingresa tu apuesta:");
+	let userInput = prompt("Please enter your bet:");
 	bet = parseFloat(userInput);
 	let current_money = parseFloat(textMoney.textContent)
-	while (isNaN(bet) || bet < 0 || bet > current_money){//revisarlo
-		alert("Apuesta no válida");
-		let userInput = prompt("Por favor ingresa tu apuesta:");
+	while (isNaN(bet) || bet < 0 || bet > current_money){
+		alert("Invalid bet");
+		let userInput = prompt("Please enter your bet:");
 		bet = parseFloat(userInput);
 	}
 	p_cards.innerHTML = "";
@@ -77,7 +77,7 @@ function new_round(){
 
 function assign_card(player) {
 	if (!roundActive) {
-        alert("Debes iniciar una nueva ronda primero.");
+        alert("You must start a new round first.");
         return; // Salir de la función si la ronda no está activa
     }
 
@@ -106,8 +106,8 @@ function assign_card(player) {
 			
 			textMoney.textContent -= bet;
 
-			alert("Has perido");
-			alert("Te quedan "+textMoney.textContent+" €");
+			alert("You have lost");
+            alert("You have " + textMoney.textContent + " € remaining");
 			roundActive = false; 
 		}
 		console.log(current_points);
@@ -119,7 +119,7 @@ function assign_card(player) {
 
 function stand(){
 	if (!roundActive) {
-        alert("Debes iniciar una nueva ronda primero.");
+        alert("You must start a new round first.");
         return; // Salir de la función si la ronda no está activa
     }
 	while (dealer_points < current_points && roundActive){
