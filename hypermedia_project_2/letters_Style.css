@@ -141,9 +141,9 @@ h1.num_game {
 
 
 .tables{
-   display: flex; /* Cambiado a flex */
+   display: flex; 
    flex-direction: row;
-   justify-content: space-between; /* Distribuye espacio entre los elementos */
+   justify-content: space-between; 
    align-items: center;
    width: 85%;
    height: 65%;
@@ -170,19 +170,6 @@ h1.num_game {
    display: none;
 }
 
-/*/---------- */
-/*.player_info{
-   font-size: 20pt;
-   display: flex;   
-   padding-top: 45px;
-   justify-self: center;            
-   justify-content: space-between; 
-   align-items: center;
-   height: 50px;
-   width: 400px;
-   text-align: center;
-   
-} */
  .p_money{   
    text-align: center;
    color: rgb(253, 253, 253);
